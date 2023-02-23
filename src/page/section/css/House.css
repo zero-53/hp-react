@@ -1,0 +1,13 @@
+.house {
+    position: absolute;
+    z-index: 1000 !important;
+    top: calc(100vh - 130px);
+    left: 0px;
+    right: 0px;
+}
+
+@media (max-width: 575px) {
+    .house {
+        top: calc(100vh - 250px);
+    }
+}
