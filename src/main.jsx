@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '@splidejs/react-splide/css';
+// import '@splidejs/react-splide/css/core';
 
 import App from "./page/App";
 import Header from "./page/section/Header";
