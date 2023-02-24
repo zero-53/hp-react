@@ -1,0 +1,26 @@
+#SuscriForm {
+    background-image: url('../../../assets/salon.png');
+    /* background-size: 100%; */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(89, 55, 24, 0.5);
+    background-blend-mode: multiply;
+    min-height: 35vh;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 40px;
+    letter-spacing: 0.5pt
+}
+
+@media (max-width: 576px) {
+    #SuscriForm {
+        padding: 3rem 0 3rem 0;
+    }
+}

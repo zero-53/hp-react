@@ -14,9 +14,9 @@ export function House() {
   }, []);
   return (
     <section className="house">
-      <Row className="mb-3">
+      <Row className="mb-5">
         <Col md={12} className="text-center">
-          <h1 className="text-warning">Casas</h1>
+          <h1 className="text-warning">Casas de Hogwarts</h1>
         </Col>
       </Row>
       <Row className="text-center">

@@ -1,12 +1,15 @@
 import "./css/Hero.css";
+import Herologo from "../../assets/herologo.png"
 
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 export function Hero() {
   return (
     <div className="Hero">
       <Container>
-        <h1 className="Hero-header ">This is Hero</h1>
+        <div className="Hero-header ">
+          <Image src={Herologo} alt="Logo Aniversario" width='34%' />
+        </div>
       </Container>
     </div>
   );

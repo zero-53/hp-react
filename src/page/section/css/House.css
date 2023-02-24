@@ -1,9 +1,6 @@
-.house {
-    position: absolute;
-    z-index: 1000 !important;
-    top: calc(100vh - 130px);
-    left: 0px;
-    right: 0px;
+.h5 {
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 0.5pt
 }
 
 @media (max-width: 575px) {
