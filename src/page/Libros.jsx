@@ -1,13 +1,39 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { Container } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import { Col, Container, Row, Spinner } from "react-bootstrap";
+import { getAllBooks } from "../services/data";
+
+import { CardBook } from "./section/components/card";
 
 export default function Libros() {
-  let id = useParams().id;
-  console.log(id);
+  const [Books, setBooks] = useState([]);
+  useEffect(() => {
+    getAllBooks()
+      .then(setBooks)
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <Container>
-      <h1>Libros {id == undefined ? "All" : id}</h1>
+      <Row className="mt-4 text-center">
+        <Col md={12}>
+          <h1 className="text-warning">Lista de Libros</h1>
+        </Col>
+      </Row>
+      <Row className="mt-5 text-center">
+        {Books.length == 0 ? (
+          <>
+            <Col md={12} className="text-center">
+              <Spinner animation="border" variant="warning" />{" "}
+              <h3>Cargando...</h3>
+            </Col>
+          </>
+        ) : (
+          Books.map((book, i) => (
+            <Col md={3} className="my-2">
+              <CardBook key={i} book={book} />
+            </Col>
+          ))
+        )}
+      </Row>
     </Container>
   );
 }
