@@ -6,8 +6,13 @@ import { HomePersonajes } from "./section/HomePersonajes";
 
 import "./css/App.css";
 import { SuscriForm } from "./section/SuscriForm";
-import { Footer } from "./section/footer";
 
+
+/**
+ * La función App devuelve un div con el id de cuerpa, que contiene los componentes Hero, Container,
+ * SuscriForm, HomePersonajes y Footer
+ * @returns el div con el id de cuerpa.
+ */
 function App() {
   return (
     <div id="cuerpa">
@@ -19,7 +24,6 @@ function App() {
       <Container>
         <HomePersonajes />
       </Container>
-      <Footer />
     </div>
   );
 }

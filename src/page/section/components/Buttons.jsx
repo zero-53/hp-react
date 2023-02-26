@@ -1,5 +1,9 @@
 import { Button } from "react-bootstrap";
 
-export function ButtonPrymary({ text }) {
-  return <Button variant="outline-warning">{text}</Button>;
+/**
+ * Toma una propiedad de texto y devuelve un botón Bootstrap con la propiedad de texto como texto.
+ * @returns Un botón con el texto "Hello World"
+ */
+export function ButtonPrymary({ text, icon = null }) {
+  return <Button variant="outline-warning">{icon} {text}</Button>;
 }

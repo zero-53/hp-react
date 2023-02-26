@@ -5,6 +5,13 @@ import { LinkContainer } from "react-router-bootstrap";
 import "./css/Header.css";
 import logo from "../../assets/spa.png";
 
+/**
+ * Devuelve un componente Navbar con un componente Navbar.Brand que contiene una imagen, un componente
+ * Navbar.Toggle y un componente Navbar.Collapse que contiene un componente Nav con cuatro componentes
+ * LinkContainer, cada uno de los cuales contiene un componente Nav.Link que contiene un componente
+ * Button .
+ * @returns Un componente Navbar con Navbar.Brand, Navbar.Toggle y Navbar.Collapse.
+ */
 const header = () => {
   return (
     <Navbar
@@ -23,11 +30,6 @@ const header = () => {
           <LinkContainer to="/hechizos">
             <Nav.Link>
               <Button text="Hechizos" />
-            </Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/posiones">
-            <Nav.Link>
-              <Button text="Posiones" />
             </Nav.Link>
           </LinkContainer>
           <LinkContainer to="/personajes">

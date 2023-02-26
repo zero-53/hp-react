@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Card } from "react-bootstrap";
 
+/**
+ * Toma un objeto de casa como accesorio y devuelve un componente de tarjeta Bootstrap con la imagen,
+ * el nombre y el número de miembros de la casa.
+ * @returns Un componente de reacción
+ */
 export function CardHouse({ house }) {
   if (!house) return null;
 
@@ -26,6 +31,11 @@ export function CardHouse({ house }) {
   );
 }
 
+/**
+ * Es una función que toma como parámetro un objeto persona y devuelve una tarjeta con la imagen, el
+ * nombre y la casa de la persona.
+ * @returns Un componente Card con Card.Img, Card.Body, Card.Title y Card.Subtitle.
+ */
 export function CardPerson({ person }) {
   if (!person) return null;
   let color1 = "#000";
@@ -81,6 +91,11 @@ export function CardPerson({ person }) {
   );
 }
 
+/**
+ * Toma un objeto de libro como accesorio y devuelve un componente Tarjeta con la imagen, el título, el
+ * subtítulo y el pie de página del libro.
+ * @returns Un componente CardBook.
+ */
 export function CardBook({ book }) {
   if (!book) return null;
   return (

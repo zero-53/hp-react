@@ -4,7 +4,9 @@ import { getAllHouses } from "../../services/data";
 import "./css/House.css";
 
 import { Row, Col, Spinner } from "react-bootstrap";
+import { Cargando } from "./components/Cargando";
 
+/* Una función que se está exportando. */
 export function House() {
   const [houses, setHouses] = useState([]);
   useEffect(() => {
@@ -21,11 +23,7 @@ export function House() {
       </Row>
       <Row className="text-center">
         {houses.length == 0 ? (
-          <>
-            <Col md={12} className="text-center">
-              <Spinner animation="border" variant="warning" /> <h3>Cargando...</h3>
-            </Col>
-          </>
+          <Cargando />
         ) : (
           houses.map((house, i) => <CardHouse key={i} house={house} />)
         )}

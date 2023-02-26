@@ -3,6 +3,14 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { FaSave } from "react-icons/fa";
 import "./css/SuscriForm.css";
 
+/**
+ * Devuelve un div con un contenedor, una fila y dos columnas. La primera columna tiene un encabezado y
+ * un párrafo. La segunda columna tiene un formulario con dos filas. La primera fila tiene dos
+ * columnas. La primera columna tiene una etiqueta y una entrada. La segunda columna tiene una etiqueta
+ * y una entrada. La segunda fila tiene dos columnas. La primera columna tiene una etiqueta y una
+ * entrada. La segunda columna tiene un botón.
+ * @returns Un componente React.
+ */
 export function SuscriForm() {
   return (
     <div id="SuscriForm">
@@ -18,7 +26,7 @@ export function SuscriForm() {
             <form>
               <Row className="mb-2">
                 <Col md={6}>
-                  <label for="fname" className="form-label">
+                  <label htmlFor="fname" className="form-label">
                     Nombre
                   </label>
                   <input
@@ -29,7 +37,7 @@ export function SuscriForm() {
                   />
                 </Col>
                 <Col md={6}>
-                  <label for="lname" className="form-label">
+                  <label htmlFor="lname" className="form-label">
                     Apellido
                   </label>
                   <input
@@ -42,7 +50,7 @@ export function SuscriForm() {
               </Row>
               <Row>
                 <Col md={6}>
-                  <label for="email" className="form-label">
+                  <label htmlFor="email" className="form-label">
                     Email
                   </label>
                   <input

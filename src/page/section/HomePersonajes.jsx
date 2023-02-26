@@ -4,6 +4,10 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { getAllPersons } from "../../services/data";
 import { CardPerson } from "./components/card";
 import "./css/HomePersonajes.css";
+import { Cargando } from "./components/Cargando";
+
+/* El código anterior es un componente de React que obtiene datos de una API y los muestra en un
+carrusel. */
 export function HomePersonajes() {
   const [personaje, setpersonaje] = useState([]);
   const [num, setNum] = useState([]);
@@ -17,7 +21,7 @@ export function HomePersonajes() {
   }, [personaje]);
 
   return (
-    <section id="personaje">
+    <section style={{ marginBottom: "100px" }} id="personaje">
       <Row className="mb-5">
         <Col md={12} className="text-center">
           <h1 className="text-warning">Personajes</h1>
@@ -25,13 +29,7 @@ export function HomePersonajes() {
       </Row>
       {/* {console.log(num)} */}
       {personaje.length == 0 ? (
-        <>
-          {console.log("cargando")}
-          <Col md={12} className="text-center">
-            <Spinner animation="border" variant="warning" />{" "}
-            <h3>Cargando...</h3>
-          </Col>
-        </>
+        <Cargando />
       ) : (
         <>
           <Row>
@@ -88,13 +86,17 @@ export function HomePersonajes() {
     </section>
   );
 }
+
+/**
+ * Cree una matriz de números del 1 al n, barájela y devuelva los primeros 6 elementos.
+ * @returns Una matriz de 6 números aleatorios entre 1 y n.
+ */
 function getRandomInt(max) {
   const n = max;
   const arr = new Array(n);
   for (let i = 0; i < n; i++) {
     arr[i] = i + 1;
   }
-
   arr.sort(() => (Math.random() > 0.5 ? 1 : -1));
   return arr.slice(0, 6);
 }
