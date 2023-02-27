@@ -46,3 +46,4 @@ Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, realiz
 ## Licencia
 
 Este proyecto está bajo la licencia MIT
+No uso comercial y no se cuenta con permiso ni derechos sobre las marcas registradas
