@@ -7,31 +7,31 @@ Este proyecto está desarrollado en React 18.2.0 y muestra información sobre lo
 Las siguientes dependencias han sido utilizadas en este proyecto:
 
 - React 18.2.0
-- bootstrap 5.2.3
-- React Bootstrap 2.0.4
 - react-dom 18.2.0
 - react-icons 4.7.1
-- react-router-bootstrap 0.26.2
 - react-router-dom 6.8.1
+- react-router-bootstrap 0.26.2
+- React Bootstrap 2.0.4
+- bootstrap 5.2.3
+- sweetalert2 11.7.2
+- sweetalert2-react-content 5.0.7
 
 ## Instrucciones de instalación
 
-1. Clonar el repositorio de GitHub: `git clone https://github.com/zero-53/harry-potter.git`
+1. Clonar el repositorio de GitHub: `git clone https://github.com/zero-53/hp-react.git`
 2. Instalar las dependencias: `npm install`
 3. Ejecutar el proyecto: `npm run dev`
 
-<!-- 
-TODO: implement
 ## Uso
+En el menú superior tendremos un menu de navegación donde nos permite conocer Hechizos, Personajes y Libros
 
-Al ejecutar el proyecto, se mostrará una lista de los personajes de Harry Potter obtenidos a través de la API. Al hacer clic en un personaje, se mostrará una tarjeta con información detallada sobre él.
+- https://hp-api.onrender.com/
+- https://legacy--api.herokuapp.com/api/v1
 
 ## API utilizada
+La API utilizada en este proyecto son 2 publicas que proporciona información sobre los personajes, casas, hechizos y más de la saga de Harry Potter.
 
-La API utilizada en este proyecto es "Potter API", que proporciona información sobre los personajes, casas, hechizos y más de la saga de Harry Potter. Puedes encontrar más información sobre la API en su sitio web oficial: https://www.potterapi.com/
 
-
-La API utilizada en este proyecto es "Potter API", que proporciona información sobre los personajes, casas, hechizos y más de la saga de Harry Potter. Puedes encontrar más información sobre la API en su sitio web oficial: https://www.potterapi.com/ -->
 
 ## Contribuciones
 
