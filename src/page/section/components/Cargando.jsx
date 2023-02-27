@@ -1,6 +1,11 @@
 import React from "react";
-import { Col, Row, Spinner } from "react-bootstrap";
+import { Col, Spinner } from "react-bootstrap";
 
+/**
+ * Cargando() es una función que devuelve un componente Col con un componente Spinner y un componente
+ * h3 dentro.
+ * @returns Un componente React.
+ */
 export function Cargando() {
   return (
     <>

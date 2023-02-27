@@ -26,7 +26,6 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        {/* <Route path="/" element={<App />} /> */}
         <Route path="/hp-react/" element={<App />} />
         <Route path="/hp-react/hechizos" element={<Hechizos />} />
         <Route path="/hp-react/personajes" element={<Personajes />} />

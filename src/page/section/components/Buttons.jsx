@@ -5,5 +5,9 @@ import { Button } from "react-bootstrap";
  * @returns Un botón con el texto "Hello World"
  */
 export function ButtonPrymary({ text, icon = null }) {
-  return <Button variant="outline-warning">{icon} {text}</Button>;
+  return (
+    <Button variant="outline-warning">
+      {icon} {text}
+    </Button>
+  );
 }

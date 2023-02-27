@@ -6,6 +6,8 @@ import { FaReply } from "react-icons/fa";
 import { getPersonById } from "../services/data";
 import { ButtonPrymary } from "./section/components/Buttons";
 import { Cargando } from "./section/components/Cargando";
+
+/* Una función que devuelve un componente. */
 export default function PersonDetail() {
   let id = useParams().id;
   let color1 = "#000";

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Col, Container, Row, Spinner } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { getAllBooks } from "../services/data";
 
 import { CardBook } from "./section/components/card";
@@ -14,7 +14,7 @@ export default function Libros() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <Container style={{marginBottom:'100px'}}>
+    <Container style={{ marginBottom: "100px" }}>
       <Row className="mt-4 text-center">
         <Col md={12}>
           <h1 className="text-warning">Lista de Libros</h1>

@@ -14,11 +14,7 @@ import logo from "../../assets/spa.png";
  */
 const header = () => {
   return (
-    <Navbar
-      variant="dark"
-      expand="lg"
-      className="px-3 bg-navbar"
-    >
+    <Navbar variant="dark" expand="lg" className="px-3 bg-navbar">
       <LinkContainer to="/hp-react/">
         <Navbar.Brand>
           <img className="logo" src={logo} alt="logo" width={250} />

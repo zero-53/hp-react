@@ -23,15 +23,15 @@ Las siguientes dependencias han sido utilizadas en este proyecto:
 3. Ejecutar el proyecto: `npm run dev`
 
 ## Uso
+
 En el menú superior tendremos un menu de navegación donde nos permite conocer Hechizos, Personajes y Libros
+
+## API utilizada
+
+La API utilizada en este proyecto son 2 publicas que proporciona información sobre los personajes, casas, hechizos y más de la saga de Harry Potter.
 
 - https://hp-api.onrender.com/
 - https://legacy--api.herokuapp.com/api/v1
-
-## API utilizada
-La API utilizada en este proyecto son 2 publicas que proporciona información sobre los personajes, casas, hechizos y más de la saga de Harry Potter.
-
-
 
 ## Contribuciones
 

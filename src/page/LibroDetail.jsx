@@ -7,6 +7,7 @@ import { getBookById } from "../services/data";
 import { ButtonPrymary } from "./section/components/Buttons";
 import { Cargando } from "./section/components/Cargando";
 
+/* Una función que se está exportando. */
 export default function LibroDetail() {
   let id = useParams().id;
   const [Book, setBook] = useState([]);

@@ -12,6 +12,9 @@ const paginationComponentOptions = {
   selectAllRowsItem: true,
   selectAllRowsItemText: "Todos",
 };
+
+
+/* Una función que devuelve un componente. */
 const Hechizos = () => {
   createTheme(
     "Morsmordre",

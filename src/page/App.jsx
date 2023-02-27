@@ -7,7 +7,6 @@ import { HomePersonajes } from "./section/HomePersonajes";
 import "./css/App.css";
 import { SuscriForm } from "./section/SuscriForm";
 
-
 /**
  * La función App devuelve un div con el id de cuerpa, que contiene los componentes Hero, Container,
  * SuscriForm, HomePersonajes y Footer

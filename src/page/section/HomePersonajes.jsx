@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Row, Col, Spinner } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { getAllPersons } from "../../services/data";
 import { CardPerson } from "./components/card";

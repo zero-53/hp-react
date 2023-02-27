@@ -11,10 +11,13 @@ import "./css/Error404.css";
  */
 export default function error404() {
   return (
-    <Container style={{marginBottom:'100px'}}>
-      <div  className="error-page">
+    <Container style={{ marginBottom: "100px" }}>
+      <div className="error-page">
         <div className="error-page-content">
-          <p className="fst-italic"><b className="text-warning">Error 404,</b><i className="text-muted"> Esta pagina no se encuentra.</i></p>
+          <p className="fst-italic">
+            <b className="text-warning">Error 404,</b>
+            <i className="text-muted"> Esta pagina no se encuentra.</i>
+          </p>
         </div>
       </div>
     </Container>

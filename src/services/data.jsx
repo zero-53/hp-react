@@ -59,7 +59,11 @@ export async function getAllBooks() {
   }
 }
 
-export async function gelAllSpell(){
+/**
+ * Obtiene datos de la API y los devuelve como un objeto JSON.
+ * @returns Una matriz de objetos.
+ */
+export async function gelAllSpell() {
   try {
     const response = await fetch(`${API_onrender}/hechizos`);
     const data = await response.json();
