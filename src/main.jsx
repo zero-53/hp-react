@@ -26,13 +26,13 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<App />} />
+        {/* <Route path="/" element={<App />} /> */}
         <Route path="/hp-react/" element={<App />} />
-        <Route path="/hechizos" element={<Hechizos />} />
-        <Route path="/personajes" element={<Personajes />} />
-        <Route path="/personajes/:id" element={<PersonDetail />} />
-        <Route path="/libros" element={<Libros />} />
-        <Route path="/libros/:id" element={<LibroDetail />} />
+        <Route path="/hp-react/hechizos" element={<Hechizos />} />
+        <Route path="/hp-react/personajes" element={<Personajes />} />
+        <Route path="/hp-react/personajes/:id" element={<PersonDetail />} />
+        <Route path="/hp-react/libros" element={<Libros />} />
+        <Route path="/hp-react/libros/:id" element={<LibroDetail />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>

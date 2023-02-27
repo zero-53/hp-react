@@ -19,7 +19,7 @@ const header = () => {
       expand="lg"
       className="px-3 bg-navbar"
     >
-      <LinkContainer to="/">
+      <LinkContainer to="/hp-react/">
         <Navbar.Brand>
           <img className="logo" src={logo} alt="logo" width={250} />
         </Navbar.Brand>
@@ -27,17 +27,17 @@ const header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="mr-auto">
-          <LinkContainer to="/hechizos">
+          <LinkContainer to="/hp-react/hechizos">
             <Nav.Link>
               <Button text="Hechizos" />
             </Nav.Link>
           </LinkContainer>
-          <LinkContainer to="/personajes">
+          <LinkContainer to="/hp-react/personajes">
             <Nav.Link>
               <Button text="Personajes" />
             </Nav.Link>
           </LinkContainer>
-          <LinkContainer to="/libros">
+          <LinkContainer to="/hp-react/libros">
             <Nav.Link>
               <Button text="Libros" />
             </Nav.Link>

@@ -73,7 +73,7 @@ export function CardPerson({ person }) {
         <Card.Title className="text-center text-capitalize">
           <Link
             className="text-decoration-none text-warning "
-            to={`/personajes/${person.id}`}
+            to={`/hp-react/personajes/${person.id}`}
           >
             {person.personaje}
           </Link>
@@ -107,7 +107,7 @@ export function CardBook({ book }) {
     >
       <Link
         className="text-decoration-none text-warning "
-        to={`/libros/${book.id}`}
+        to={`/hp-react/libros/${book.id}`}
       >
         <Card.Img variant="top" src={book.image_url} className="rounded-top" />
       </Link>
@@ -115,7 +115,7 @@ export function CardBook({ book }) {
         <Card.Title className="text-warning">
           <Link
             className="text-decoration-none text-warning "
-            to={`/libros/${book.id}`}
+            to={`/hp-react/libros/${book.id}`}
           >
             {book.libro}
           </Link>

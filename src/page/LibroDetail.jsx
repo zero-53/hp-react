@@ -83,7 +83,7 @@ export default function LibroDetail() {
                 </Col>
               </Row>
               <Row className="mt-5">
-                <Link to={"/libros"}>
+                <Link to={"/hp-react/libros"}>
                   <ButtonPrymary text={"Volver"} icon={<FaReply />} />
                 </Link>
               </Row>

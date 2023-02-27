@@ -104,7 +104,7 @@ export default function PersonDetail() {
                 </Row>
               ) : null}
               <Row className="mt-5">
-                <Link to={"/personajes"}>
+                <Link to={"/hp-react/personajes"}>
                   <ButtonPrymary text={"Volver"} icon={<FaReply />} />
                 </Link>
               </Row>
